@@ -1,0 +1,32 @@
+{
+  "pages":[
+    "pages/hcr-index/hcr-index",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "backgroundColor": "#dfdfdf",
+    "color": "black",
+    "selectedColor": "green",
+    "list": [
+      {
+        "pagePath": "pages/hcr-index/hcr-index",
+        "text": "主页",
+        "iconPath":"/images/home.png",
+        "selectedIconPath": "/images/home-selected.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "历史纪录",
+        "iconPath": "/images/list.png",
+        "selectedIconPath":"/images/list-selected.png"
+      }
+    ]
+  }
+}

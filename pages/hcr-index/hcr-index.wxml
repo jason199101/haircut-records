@@ -1,0 +1,28 @@
+<view class="page_bd">
+<view class="section__nav">
+  <view class="userinfo left">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 点击登录 </button>
+    <block wx:else>
+      <image  class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="right">
+      <image class="qc-scan" src="/images/qc.png" mode="aspectFill"></image>
+      <image class="qc-scan" src="/images/scan.png" mode="aspectFill" bindtap="scan"></image>
+  </view>
+  </view>
+  <view class="line"></view>
+  <view>{{show}}</view>
+  <view class="image-view">
+    <image class="image-show" src='https://haircut-records-1256752647.cos.ap-shanghai.myqcloud.com/IMG_1615.JPG'></image>
+    <image class="image-show" src='{{image_photo[1]}}'></image>
+  </view>
+  <view class="image-view">
+    <image class="image-show" src='{{image_photo[2]}}'></image>
+    <image class="image-show" src='{{image_photo[3]}}'></image>
+  </view>
+  <view class="camera">
+    <button class="camera-button" bindtap='camera'><image class="qc-scan" src="/images/camera.png"></image>今日发型</button>
+  </view>
+</view>
